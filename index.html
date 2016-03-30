@@ -11,5 +11,44 @@
 <body>
 	<h1>brailleapps.github.io</h1>
 	<p>Back to <a href="https://github.com/brailleapps">https://github.com/brailleapps</a></p>
+	<p><em>Provides applications and APIs for producing braille</em></p>
+	<h2>Applications</h2>
+	<h3>Braille Utils</h3>
+	<p>Braille Utils provides a command line interface for embossing and manipulating PEF-files.</p>
+	<h3>Dotify</h3>
+	<p>Dotify provides a command line interface for formatting and translating a document
+	into braille. Since Dotify extends Braille Utils, it also has access to all the functionality
+	found in Braille Utils.</p>
+	<h2>For developers</h2>
+	<h3>API bundles</h3>
+	<p>The following APIs can be used to extend the applications above or to write new ones.</p>
+	<ul>
+	<li><a href="https://github.com/brailleapps/braille-utils.api">braille-utils.api</a></li>
+	<li><a href="https://github.com/brailleapps/dotify.api">dotify.api</a></li>
+	<li><a href="https://github.com/brailleapps/dotify.task-api">dotify.task-api</a></li>
+	</ul>
+	<h3>Implementation providers</h3>
+	<p>The following bundles provides implementations to some part of the APIs above. Typically, they
+	do not have classes intended for direct use. Instead, they can be used by accessing classes found 
+	in the APIs.</p>
+	<ul>
+	<li>braille-utils.impl</li>
+	<li>dotify.formatter.impl</li>
+	<li>dotify.task.impl</li>
+	<li>dotify.translator.impl</li>
+	<li>dotify.text.impl</li>
+	<li>dotify.hyphenator.impl</li>
+	</ul>
+	<h3>Utility bundles</h3>
+	<p>The following bundles provide classes intended for direct use. Many makes use of the APIs above
+	and expects to have access to relevant implementations.</p>
+	<ul>
+	<li>braille-utils.pef-tools</li>
+	<li>braille-utils.basic-cli</li>
+	<li>dotify.common</li>
+	<li>dotify.task-runner</li>
+	</ul>
+	<h1>See also</h1>
+	<p>For the specifications that these applications are based on, see <a href="http://braillespecs.github.io">http://braillespecs.github.io</a></p>
 </body>
 </html>
