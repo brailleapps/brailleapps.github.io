@@ -1,0 +1,6 @@
+org.daisy.dotify.devtools.cli
+org.daisy.dotify.devtools.converters
+org.daisy.dotify.devtools.jvm
+org.daisy.dotify.devtools.regression
+org.daisy.dotify.devtools.schematron
+org.daisy.dotify.devtools.unbrailler
