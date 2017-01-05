@@ -1,0 +1,4 @@
+org.daisy.dotify.api.identity
+org.daisy.dotify.api.tasks
+org.daisy.dotify.consumer.identity
+org.daisy.dotify.consumer.tasks
