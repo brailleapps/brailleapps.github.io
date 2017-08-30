@@ -11,3 +11,30 @@ body {
 a:VISITED, a {
 	color: #484;
 }
+
+ul.navigation {
+	display: table;
+	margin: 0;
+	padding: 0;
+}
+
+ul.navigation li {
+	display: table-cell;
+}
+
+ul.navigation li a {
+	background-color: #f0f0f0;
+}
+
+ul.navigation li * {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 10px 10px 5px 10px;
+	background-color: #c0c0c0;
+}
+
+div.footer {
+	margin-top: 5em;
+	border-top: solid 1px;
+	
+}
