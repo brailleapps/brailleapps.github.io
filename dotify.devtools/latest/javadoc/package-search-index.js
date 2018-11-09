@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.daisy.dotify.devtools.cli"},{"l":"org.daisy.dotify.devtools.converters"},{"l":"org.daisy.dotify.devtools.jvm"},{"l":"org.daisy.dotify.devtools.regression"},{"l":"org.daisy.dotify.devtools.schematron"},{"l":"org.daisy.dotify.devtools.unbrailler"}]
