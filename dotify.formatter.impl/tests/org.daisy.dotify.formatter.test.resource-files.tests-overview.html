@@ -46,7 +46,7 @@
 				</style>
     </head>
     <body>
-        <p>Updated: 2019-01-16T14:40Z</p>
+        <p>Updated: 2019-01-17T12:23Z</p>
         <h1 id="orphans-input.obfl">
             Orphans test<a href="#orphans-input.obfl" class="internal"> &para;</a>
         </h1>
@@ -12660,6 +12660,137 @@
           &lt;row/&gt;
           &lt;row/&gt;
           &lt;row&gt;⠼⠃⠀⠀⠀⠀⠀⠀⠀⠀&lt;/row&gt;
+        &lt;/page&gt;
+      &lt;/section&gt;
+    &lt;/volume&gt;
+  &lt;/body&gt;
+&lt;/pef&gt;</pre>
+        <h1 id="marker-ref/marker-reference-issue-39-input.obfl">
+            Marker reference sequence search test<a href="#marker-ref/marker-reference-issue-39-input.obfl" class="internal"> &para;</a>
+        </h1>
+        <p>Tests marker reference with direction="backward" and scope="sequence" combined with break-before="volume".</p>
+        <h2>marker-ref/marker-reference-issue-39-input.obfl</h2>
+        <pre class="example">
+&lt;obfl version="2011-1" xml:lang="und" hyphenate="false"&gt;
+  &lt;meta&gt;
+    &lt;dc:title&gt;Marker reference sequence search test&lt;/dc:title&gt;
+    &lt;dc:description&gt;Tests marker reference with direction="backward" and scope="sequence" combined with break-before="volume".&lt;/dc:description&gt;
+  &lt;/meta&gt;
+  &lt;layout-master name="master" duplex="true" page-width="10" page-height="5"&gt;
+    &lt;default-template&gt;
+      &lt;header/&gt;
+      &lt;footer&gt;
+        &lt;field&gt;
+          &lt;marker-reference marker="foo" direction="backward" scope="sequence"/&gt;
+        &lt;/field&gt;
+      &lt;/footer&gt;
+    &lt;/default-template&gt;
+  &lt;/layout-master&gt;
+  &lt;sequence master="master"&gt;
+    &lt;block&gt;
+      &lt;marker class="foo" value="1"/&gt;
+    &lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+  &lt;/sequence&gt;
+  &lt;sequence master="master" break-before="volume"&gt;
+    &lt;block&gt;
+      &lt;marker class="foo" value="1"/&gt;
+    &lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;
+      &lt;marker class="foo" value="2"/&gt;
+    &lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤⠤⠤⠤&lt;/block&gt;
+  &lt;/sequence&gt;
+&lt;/obfl&gt;</pre>
+        <h2>marker-ref/marker-reference-issue-39-expected.pef</h2>
+        <pre class="example">
+&lt;pef version="2008-1"&gt;
+  &lt;head&gt;
+    &lt;meta&gt;
+      &lt;dc:format&gt;application/x-pef+xml&lt;/dc:format&gt;
+      &lt;dc:identifier&gt;identifier?&lt;/dc:identifier&gt;
+    &lt;/meta&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;volume cols="10" rows="5" rowgap="0" duplex="true"&gt;
+      &lt;section&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠼⠁&lt;/row&gt;
+        &lt;/page&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠼⠁&lt;/row&gt;
+        &lt;/page&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠼⠁&lt;/row&gt;
+        &lt;/page&gt;
+      &lt;/section&gt;
+    &lt;/volume&gt;
+    &lt;volume cols="10" rows="5" rowgap="0" duplex="true"&gt;
+      &lt;section&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠼⠁&lt;/row&gt;
+        &lt;/page&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠼⠁&lt;/row&gt;
+        &lt;/page&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠼⠃&lt;/row&gt;
+        &lt;/page&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠤⠤⠤&lt;/row&gt;
+          &lt;row/&gt;
+          &lt;row&gt;⠼⠃&lt;/row&gt;
         &lt;/page&gt;
       &lt;/section&gt;
     &lt;/volume&gt;
