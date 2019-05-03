@@ -46,7 +46,7 @@
 				</style>
     </head>
     <body>
-        <p>Updated: 2019-04-30T08:43Z</p>
+        <p>Updated: 2019-05-03T11:44Z</p>
         <h1 id="orphans-input.obfl">
             Orphans test<a href="#orphans-input.obfl" class="internal"> &para;</a>
         </h1>
@@ -2254,6 +2254,183 @@
           &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
         &lt;/page&gt;
         &lt;page&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+        &lt;/page&gt;
+      &lt;/section&gt;
+    &lt;/volume&gt;
+  &lt;/body&gt;
+&lt;/pef&gt;</pre>
+        <h1 id="volume-break/volume-breaks-priority3-input.obfl">
+            Volume-keep-priority/page numbering test<a href="#volume-break/volume-breaks-priority3-input.obfl" class="internal"> &para;</a>
+        </h1>
+        <p>Tests page numbering combined with volume-keep-priority, a long sequence and sheet range volume transition.</p>
+        <h2>volume-break/volume-breaks-priority3-input.obfl</h2>
+        <pre class="example">
+&lt;obfl version="2011-1" xml:lang="en"&gt;
+  &lt;meta&gt;
+    &lt;dc:title&gt;Volume-keep-priority/page numbering test&lt;/dc:title&gt;
+    &lt;dc:description&gt;Tests page numbering combined with volume-keep-priority, a long sequence and sheet range volume transition.&lt;/dc:description&gt;
+  &lt;/meta&gt;
+  &lt;layout-master name="body" page-width="10" page-height="7" duplex="true"&gt;
+    &lt;default-template&gt;
+      &lt;header&gt;
+        &lt;field&gt;
+          &lt;current-page/&gt;
+        &lt;/field&gt;
+      &lt;/header&gt;
+      &lt;footer/&gt;
+    &lt;/default-template&gt;
+  &lt;/layout-master&gt;
+  &lt;volume-template sheets-in-volume-max="2"&gt;
+    &lt;pre-content/&gt;
+    &lt;post-content/&gt;
+  &lt;/volume-template&gt;
+  &lt;volume-transition range="sheet"&gt;&lt;/volume-transition&gt;
+  &lt;sequence master="body"&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block volume-keep-priority="1"&gt;
+      &lt;block&gt;⠿⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;block volume-keep-priority="1"&gt;
+      &lt;block&gt;⠿⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+      &lt;block&gt;⠤⠤ ⠤⠤ ⠤⠤&lt;/block&gt;
+    &lt;/block&gt;
+  &lt;/sequence&gt;
+&lt;/obfl&gt;</pre>
+        <h2>volume-break/volume-breaks-priority3-expected.pef</h2>
+        <pre class="example">
+&lt;pef version="2008-1"&gt;
+  &lt;head&gt;
+    &lt;meta&gt;
+      &lt;dc:format&gt;application/x-pef+xml&lt;/dc:format&gt;
+      &lt;dc:identifier&gt;identifier?&lt;/dc:identifier&gt;
+    &lt;/meta&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;volume cols="10" rows="7" rowgap="0" duplex="true"&gt;
+      &lt;section&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠼⠁&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+        &lt;/page&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠼⠃&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+        &lt;/page&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠼⠉&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+        &lt;/page&gt;
+      &lt;/section&gt;
+    &lt;/volume&gt;
+    &lt;volume cols="10" rows="7" rowgap="0" duplex="true"&gt;
+      &lt;section&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠼⠑&lt;/row&gt;
+          &lt;row&gt;⠿⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+        &lt;/page&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠼⠋&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+        &lt;/page&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠼⠛&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+        &lt;/page&gt;
+      &lt;/section&gt;
+    &lt;/volume&gt;
+    &lt;volume cols="10" rows="7" rowgap="0" duplex="true"&gt;
+      &lt;section&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠼⠊&lt;/row&gt;
+          &lt;row&gt;⠿⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+          &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
+        &lt;/page&gt;
+        &lt;page&gt;
+          &lt;row&gt;⠼⠁⠚&lt;/row&gt;
           &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
           &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
           &lt;row&gt;⠤⠤⠀⠤⠤⠀⠤⠤&lt;/row&gt;
