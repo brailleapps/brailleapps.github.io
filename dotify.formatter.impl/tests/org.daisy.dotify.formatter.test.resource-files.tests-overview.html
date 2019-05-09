@@ -46,7 +46,7 @@
 				</style>
     </head>
     <body>
-        <p>Updated: 2019-05-08T14:55Z</p>
+        <p>Updated: 2019-05-09T08:58Z</p>
         <h1 id="orphans-input.obfl">
             Orphans test<a href="#orphans-input.obfl" class="internal"> &para;</a>
         </h1>
@@ -229,6 +229,109 @@
           &lt;row/&gt;
           &lt;row/&gt;
           &lt;row&gt;⠤⠤⠤&lt;/row&gt;
+        &lt;/page&gt;
+      &lt;/section&gt;
+    &lt;/volume&gt;
+  &lt;/body&gt;
+&lt;/pef&gt;</pre>
+        <h1 id="vertical-position/vertical-position-first-block-input.obfl">
+            vertical-position-first-block<a href="#vertical-position/vertical-position-first-block-input.obfl" class="internal"> &para;</a>
+        </h1>
+        <p>Tests that vertical-position works on the first block of the sequence.</p>
+        <h2>vertical-position/vertical-position-first-block-input.obfl</h2>
+        <pre class="example">
+&lt;obfl version="2011-1" xml:lang="und" hyphenate="false"&gt;
+  &lt;meta&gt;
+    &lt;dc:title&gt;vertical-position-first-block&lt;/dc:title&gt;
+    &lt;dc:description&gt;Tests that vertical-position works on the first block of the sequence.&lt;/dc:description&gt;
+  &lt;/meta&gt;
+  &lt;layout-master name="master" page-width="10" page-height="20"&gt;
+    &lt;default-template&gt;
+      &lt;header/&gt;
+      &lt;footer/&gt;
+    &lt;/default-template&gt;
+  &lt;/layout-master&gt;
+  &lt;sequence master="master"&gt;
+    &lt;block&gt;
+      &lt;block vertical-position="4"&gt;⠿⠿⠿&lt;/block&gt;
+      &lt;block vertical-position="8"&gt;⠿⠿⠿&lt;/block&gt;
+    &lt;/block&gt;
+  &lt;/sequence&gt;
+&lt;/obfl&gt;</pre>
+        <h2>vertical-position/vertical-position-first-block-expected.pef</h2>
+        <pre class="example">
+&lt;pef version="2008-1"&gt;
+  &lt;head&gt;
+    &lt;meta&gt;
+      &lt;dc:format&gt;application/x-pef+xml&lt;/dc:format&gt;
+      &lt;dc:identifier&gt;identifier?&lt;/dc:identifier&gt;
+    &lt;/meta&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;volume cols="10" rows="20" rowgap="0" duplex="true"&gt;
+      &lt;section&gt;
+        &lt;page&gt;
+          &lt;row/&gt;
+          &lt;row/&gt;
+          &lt;row/&gt;
+          &lt;row/&gt;
+          &lt;row&gt;⠿⠿⠿&lt;/row&gt;
+          &lt;row/&gt;
+          &lt;row/&gt;
+          &lt;row/&gt;
+          &lt;row&gt;⠿⠿⠿&lt;/row&gt;
+        &lt;/page&gt;
+      &lt;/section&gt;
+    &lt;/volume&gt;
+  &lt;/body&gt;
+&lt;/pef&gt;</pre>
+        <h1 id="vertical-position/vertical-position-passed-input.obfl">
+            vertical-position-first-block<a href="#vertical-position/vertical-position-passed-input.obfl" class="internal"> &para;</a>
+        </h1>
+        <p>Tests that a passed vertical-position is ignored.</p>
+        <h2>vertical-position/vertical-position-passed-input.obfl</h2>
+        <pre class="example">
+&lt;obfl version="2011-1" xml:lang="und" hyphenate="false"&gt;
+  &lt;meta&gt;
+    &lt;dc:title&gt;vertical-position-first-block&lt;/dc:title&gt;
+    &lt;dc:description&gt;Tests that a passed vertical-position is ignored.&lt;/dc:description&gt;
+  &lt;/meta&gt;
+  &lt;layout-master name="master" page-width="10" page-height="20"&gt;
+    &lt;default-template&gt;
+      &lt;header/&gt;
+      &lt;footer/&gt;
+    &lt;/default-template&gt;
+  &lt;/layout-master&gt;
+  &lt;sequence master="master"&gt;
+    &lt;block&gt;
+      &lt;block vertical-position="8"&gt;⠿⠿⠿&lt;/block&gt;
+      &lt;block vertical-position="4"&gt;⠿⠿&lt;/block&gt;
+    &lt;/block&gt;
+  &lt;/sequence&gt;
+&lt;/obfl&gt;</pre>
+        <h2>vertical-position/vertical-position-passed-expected.pef</h2>
+        <pre class="example">
+&lt;pef version="2008-1"&gt;
+  &lt;head&gt;
+    &lt;meta&gt;
+      &lt;dc:format&gt;application/x-pef+xml&lt;/dc:format&gt;
+      &lt;dc:identifier&gt;identifier?&lt;/dc:identifier&gt;
+    &lt;/meta&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;volume cols="10" rows="20" rowgap="0" duplex="true"&gt;
+      &lt;section&gt;
+        &lt;page&gt;
+          &lt;row/&gt;
+          &lt;row/&gt;
+          &lt;row/&gt;
+          &lt;row/&gt;
+          &lt;row/&gt;
+          &lt;row/&gt;
+          &lt;row/&gt;
+          &lt;row/&gt;
+          &lt;row&gt;⠿⠿⠿&lt;/row&gt;
+          &lt;row&gt;⠿⠿&lt;/row&gt;
         &lt;/page&gt;
       &lt;/section&gt;
     &lt;/volume&gt;
